@@ -1,49 +1,78 @@
+
 <!DOCTYPE html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Produk Digital - Landing Page</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Produk Digital - Landing Page Modern</title>
   <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    /* Animasi sederhana */
+    @keyframes float {
+      0% { transform: translateY(0px); }
+      50% { transform: translateY(-10px); }
+      100% { transform: translateY(0px); }
+    }
+    .float { animation: float 3s ease-in-out infinite; }
+
+    @keyframes fadeInUp {
+      0% { opacity: 0; transform: translateY(30px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+    .fade-in-up { animation: fadeInUp 1s ease forwards; }
+  </style>
 </head>
 <body class="font-sans bg-gray-50 text-gray-800">
-  <!-- Hero Section -->
-  <section class="bg-gradient-to-r from-green-500 to-green-700 text-white py-20 px-6 text-center">
-    <h1 class="text-4xl md:text-5xl font-bold mb-4">Produk Digital Premium</h1>
-    <p class="text-lg md:text-xl mb-6">Solusi praktis, cepat, dan terpercaya untuk kebutuhan digital Anda.</p>
-    <a href="https://wa.me/6281228565792" target="_blank"
-       class="bg-orange-500 hover:bg-orange-600 text-white px-6 py-3 rounded-xl text-lg font-semibold shadow-lg transition">
-      Chat via WhatsApp
-    </a>
+
+  <!-- HERO SECTION -->
+  <section class="bg-gradient-to-r from-green-500 to-emerald-700 text-white py-20 px-6 text-center overflow-hidden relative">
+    <div class="max-w-4xl mx-auto fade-in-up">
+      <h1 class="text-5xl font-bold mb-4 drop-shadow-lg">Produk Digital Premium</h1>
+      <p class="text-lg md:text-xl mb-6">Solusi digital praktis & modern untuk kebutuhan Anda — cepat, berkualitas, dan terpercaya.</p>
+      <a href="https://wa.me/6281228565792" target="_blank"
+         class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-xl text-lg font-semibold shadow-lg transition transform hover:scale-105">
+        Chat via WhatsApp
+      </a>
+    </div>
+
+    <!-- Gambar dekorasi animasi -->
+    <img src="https://cdn-icons-png.flaticon.com/512/1055/1055646.png" 
+         alt="Digital Icon" class="absolute left-10 bottom-10 w-24 md:w-32 float opacity-70" />
+    <img src="https://cdn-icons-png.flaticon.com/512/684/684908.png"
+         alt="Cloud Icon" class="absolute right-10 top-10 w-20 md:w-28 float opacity-70" />
   </section>
 
-  <!-- Keunggulan -->
-  <section class="max-w-5xl mx-auto py-16 px-6">
-    <h2 class="text-3xl font-bold text-center mb-10">Kenapa Pilih Produk Kami?</h2>
-    <div class="grid md:grid-cols-3 gap-8">
-      <div class="bg-white shadow-lg p-6 rounded-2xl text-center hover:scale-105 transition">
-        <h3 class="text-xl font-semibold mb-3">⭐ Kualitas Premium</h3>
-        <p>Produk digital kami selalu update & terjamin kualitasnya.</p>
+  <!-- FEATURES SECTION -->
+  <section class="max-w-6xl mx-auto py-16 px-6">
+    <h2 class="text-3xl font-bold text-center mb-10 fade-in-up">Kenapa Pilih Produk Kami?</h2>
+    <div class="grid md:grid-cols-3 gap-8 fade-in-up">
+      <div class="bg-white shadow-xl p-6 rounded-2xl text-center hover:scale-105 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" class="mx-auto w-16 mb-3 float" />
+        <h3 class="text-xl font-semibold mb-2">⭐ Kualitas Premium</h3>
+        <p>Produk kami dirancang profesional dan selalu update sesuai tren digital terbaru.</p>
       </div>
-      <div class="bg-white shadow-lg p-6 rounded-2xl text-center hover:scale-105 transition">
-        <h3 class="text-xl font-semibold mb-3">⚡ Instan & Praktis</h3>
-        <p>Proses cepat, langsung bisa digunakan tanpa ribet.</p>
+      <div class="bg-white shadow-xl p-6 rounded-2xl text-center hover:scale-105 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/3209/3209265.png" class="mx-auto w-16 mb-3 float" />
+        <h3 class="text-xl font-semibold mb-2">⚡ Instan & Praktis</h3>
+        <p>Langsung bisa digunakan tanpa proses ribet — cocok untuk semua kalangan.</p>
       </div>
-      <div class="bg-white shadow-lg p-6 rounded-2xl text-center hover:scale-105 transition">
-        <h3 class="text-xl font-semibold mb-3">💰 Harga Terjangkau</h3>
-        <p>Harga bersahabat dengan manfaat maksimal.</p>
+      <div class="bg-white shadow-xl p-6 rounded-2xl text-center hover:scale-105 transition">
+        <img src="https://cdn-icons-png.flaticon.com/512/2910/2910768.png" class="mx-auto w-16 mb-3 float" />
+        <h3 class="text-xl font-semibold mb-2">💰 Harga Terjangkau</h3>
+        <p>Harga bersahabat dengan manfaat maksimal. Cocok untuk pebisnis & kreator digital.</p>
       </div>
     </div>
   </section>
 
-  <!-- CTA -->
-  <section class="bg-green-600 text-white text-center py-16 px-6 rounded-t-3xl">
+  <!-- CTA SECTION -->
+  <section class="bg-emerald-700 text-white text-center py-16 px-6 rounded-t-3xl fade-in-up">
     <h2 class="text-3xl font-bold mb-4">Siap Mulai Sekarang?</h2>
-    <p class="mb-6 text-lg">Klik tombol di bawah untuk langsung terhubung ke WhatsApp kami.</p>
+    <p class="mb-4 text-lg">Untuk tahu lebih lanjut tentang produk digital apa saja yang saya jual, silakan klik tombol di bawah ini.</p>
     <a href="https://wa.me/6281228565792" target="_blank"
-       class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-xl text-lg font-semibold shadow-lg transition">
-      Pesan via WhatsApp
+       class="bg-orange-500 hover:bg-orange-600 text-white px-8 py-3 rounded-xl text-lg font-semibold shadow-lg transition transform hover:scale-105">
+      Hubungi via WhatsApp
     </a>
   </section>
+
 </body>
 </html>
